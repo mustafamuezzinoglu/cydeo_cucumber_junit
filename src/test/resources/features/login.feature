@@ -1,0 +1,36 @@
+@Regression @smoke @login
+Feature: Library app login feature
+  User Story:
+  As a user, I should be able to login with correct credentials to different accounts. And dashboard should be displayed.
+
+  Accounts are: librarian, student, admin
+
+
+  Background: For the scenarios in the feature file, user is expected to be on login page    #like as pre-condition in jira
+    Given user is on login page
+
+  @librarian @employee @wip
+  Scenario: Login as Librarian
+
+
+    When user enters librarian username
+    And user enter librarian password
+    Then user should see the dashboard
+
+  @student
+  Scenario: Login as student
+
+
+    When user enters student username
+    And user enter student password
+    Then user should see the dashboard
+
+  @admin @employee
+  Scenario: Login as admin
+    When user enters admin username
+    And user enter admin password
+    Then user should see the dashboard
+
+
+
+

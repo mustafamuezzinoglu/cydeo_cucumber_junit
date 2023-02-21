@@ -9,7 +9,7 @@ Feature: Library app login feature
   Background: For the scenarios in the feature file, user is expected to be on login page    #like as pre-condition in jira
     Given user is on login page
 
-  @librarian @employee @wip
+  @librarian @employee
   Scenario: Login as Librarian
 
 

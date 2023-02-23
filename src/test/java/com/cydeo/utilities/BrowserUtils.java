@@ -54,6 +54,18 @@ public class BrowserUtils {
         Assert.assertEquals(Driver.getDriver().getTitle(), expectedTitle);
     }
 
+    public static void verifyTitleContains(String expectedTitle) {
+        Assert.assertTrue(Driver.getDriver().getTitle().contains(expectedTitle));
+    }
+
+    /**
+     * This method accepts a String "expectedTitle" and Asserts if it is true
+     * @param expectedInUrl
+     */
+    public static void verifyUrlContains(String expectedInUrl) {
+        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(expectedInUrl));
+    }
+
     /*
    Creating a utility method for ExplicitWait, so we don't have to repeat the lines
     */

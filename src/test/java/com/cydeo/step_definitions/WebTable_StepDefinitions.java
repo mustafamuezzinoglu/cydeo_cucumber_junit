@@ -1,6 +1,6 @@
 package com.cydeo.step_definitions;
 
-import com.cydeo.pages.WebTableSearchPage;
+import com.cydeo.pages.WebTableLoginPage;
 import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.Driver;
@@ -11,7 +11,7 @@ import io.cucumber.java.en.When;
 
 public class WebTable_StepDefinitions {
 
-    WebTableSearchPage locators = new WebTableSearchPage();
+    WebTableLoginPage locators = new WebTableLoginPage();
 
     @Given("user is on the login page of web table app")
     public void user_is_on_the_login_page_of_web_table_app() {

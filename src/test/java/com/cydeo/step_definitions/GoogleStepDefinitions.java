@@ -57,7 +57,7 @@ public class GoogleStepDefinitions {
 
         Assert.assertEquals(expectedTitle, actualTitle);
 
-        Driver.closeDriver();
+
     }
 
 }

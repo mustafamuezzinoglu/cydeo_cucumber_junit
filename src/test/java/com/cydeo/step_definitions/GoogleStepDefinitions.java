@@ -11,9 +11,9 @@ public class GoogleStepDefinitions {
 
     GoogleSearchPage googleSearchPage = new GoogleSearchPage();
 
-    @When("User types {word} and clicks enter")
-    public void user_types_and_clicks_enter2(String searchKeyword) {
-        googleSearchPage.searchBox.sendKeys(searchKeyword+ Keys.ENTER);
+    @When("User types apple and clicks enter")
+    public void user_types_and_clicks_enter2() {
+        googleSearchPage.searchBox.sendKeys("apple"+ Keys.ENTER);
     }
 
     @When("User types {string} and clicks enter")
@@ -33,14 +33,14 @@ public class GoogleStepDefinitions {
 
     }
 
-    @Then("user sees {word}  in the google title")
-    public void user_sees_apple_in_the_google_title(String anything) {
+    @Then("user sees apple  in the google title")
+    public void user_sees_apple_in_the_google_title() {
 
-        String expectedTitle = anything + " - Google'da Ara";
+        String expectedTitle = "apple - Google'da Ara";
         String actualTitle = Driver.getDriver().getTitle();
 
 //      Junit assertion accepts first arguments as expected , second arg as actual
-        Assert.assertEquals(expectedTitle, actualTitle);
+        Assert.assertEquals("Title is not as expected! ", expectedTitle, actualTitle);
 //      Assert.assertTrue(actualTitle.equals(expectedTitle));
 
     }

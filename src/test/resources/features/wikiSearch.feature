@@ -28,7 +28,7 @@ Feature:  Wikipedia Search Functionality  and  Verification
       | searchValue       | expectedTitle     | expectedMainHeader |
       | Steve Jobs        | Steve Jobs        | Steve Jobs         |
       | Cristiano Ronaldo | Cristiano Ronaldo | Cristiano Ronaldo  |
-      | Bob Marley        | Bob Marley        | Bob Marley         |
+      | Bob Marley        | Bob Marley        | Bob Marley       |
       | Chuck Norris      | Chuck Norris      | Chuck Norris       |
       | Antony Hopkins    | Antony Hopkins    | Antony Hopkins     |
 

@@ -8,7 +8,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 public class Hooks {
-
+/*
     //import from io.cucumber.java not from junit
     @Before(order = 1)
     public void setupScenario() {
@@ -24,7 +24,7 @@ public class Hooks {
     public void setupForDatabaseScenarios() {
         System.out.println("===this will only apply to database scenarios with @db tag");
     }
-
+*/
     @After
     public void teardownScenario(Scenario scenario) {
         if (scenario.isFailed()) {
@@ -39,7 +39,7 @@ public class Hooks {
 //        System.out.println("=====Closing browser using cucumber @After");
 //        System.out.println("=====Scenario ended/ Take screenshot if failed!");
     }
-
+/*
     @BeforeStep
     public void setupStep() {
         System.out.println("--------> Applying setup using @BeforeStep");
@@ -49,5 +49,5 @@ public class Hooks {
     @AfterStep
     public void afterStep() {
         System.out.println("----------> Applying teardown using @AfterStep");
-    }
+    }*/
 }

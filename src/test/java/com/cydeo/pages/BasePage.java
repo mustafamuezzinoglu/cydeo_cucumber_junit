@@ -11,22 +11,21 @@ import org.openqa.selenium.support.PageFactory;
 
 public class BasePage {
 
-public BasePage() {
-    PageFactory.initElements(Driver.getDriver(), this);
-}
+    public BasePage() {
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
 
-@FindBy(xpath= "//button[.='View all orders']")
+    @FindBy(xpath = "//button[.='View all orders']")
     public WebElement viewAllOrders;
 
-    @FindBy(xpath= "//button[.='View all products']")
+    @FindBy(xpath = "//button[.='View all products']")
     public WebElement viewAllProducts;
 
-    @FindBy(xpath= "//button[.='Order']")
+    @FindBy(xpath = "//button[.='Order']")
     public WebElement order;
 
-    @FindBy(xpath= "//button[.='Logout']")
+    @FindBy(xpath = "//button[.='Logout']")
     public WebElement logout;
-
 
 
 }
